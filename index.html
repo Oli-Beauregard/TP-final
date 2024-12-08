@@ -1,13 +1,342 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/css/styles.css" src="stylesheet">
-    <script src="assets/js/index.js" defer></script>
-    <title>Document</title>
-</head>
-<body>
-    <h1>L'univers marin</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="assets/images/Vagues/logo.png" />
+    <title>La Faune sous-marine</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>La Faune sous-marine</h1>
+        <ul>
+          <li>
+            <a>Les profondeurs</a>
+            <ul class="sous-menu">
+              <li><a href="#100m">100 mètres</a></li>
+              <li><a href="#500m">500 mètres</a></li>
+              <li><a href="#1000m">1000 mètres</a></li>
+              <li><a href="#2000m">2000 mètres</a></li>
+              <li><a href="#3000m">3000 mètres</a></li>
+              <li><a href="#4000m">4000 mètres</a></li>
+              <li><a href="#5000m">5000 mètres</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="tableau.html" target="_blank"
+              >Les animaux marins au Québec</a
+            >
+          </li>
+          <li>
+            <a href="formulaire.html" target="_blank">Faire un don</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="ciel"></div>
+    <main>
+      <img
+        src="assets/images/Vagues/vague.png"
+        class="vagues vague1"
+        alt="vague1"
+      />
+      <img
+        src="assets/images/Vagues/vague2.png"
+        class="vagues vague2"
+        alt="vague2"
+      />
+
+      <article class="animal Lamantin">
+        <img
+          src="assets/images/Animaux/Lamantin.png"
+          alt="Lamantin"
+        />
+        <h3>Lamantin</h3>
+        <p>
+          Mammifère marin paisible vivant en eaux chaudes se nourrisant
+          exclusivement de plantes aquatiques.
+        </p>
+      </article>
+      <div class="animal Morue">
+        <img
+          src="assets/images/Animaux/morue_atlantique.png"
+        />
+        <h3>Morue de l'Atlantique</h3>
+      </div>
+      <article class="animal Beluga">
+        <img
+          src="assets/images/Animaux/beluga.png"
+          alt="Beluga"
+        />
+        <h3>Beluga</h3>
+        <p>
+          Petit Cétacé blanc aux eaux tempérées et glaciales se distinguant par
+          son front bombé et sa capacité à communiquer avec une variété de sons
+          mélodieux.
+        </p>
+      </article>
+      <h2 id="100m">--100 mètres</h2>
+      <div class="animal Orque">
+        <img src="assets/images/Animaux/Orque.png" alt="Orque" />
+        <h3>Orque</h3>
+      </div>
+
+      <div class="animal Requin_bleu">
+        <img
+          src="assets/images/Animaux/Requin_bleu.png"
+          alt="Requin bleu"
+        />
+        <h3>Requin bleu</h3>
+      </div>
+
+      <article class="animal Raie_Manta">
+        <img
+          src="assets/images/Animaux/raie_manta.webp"
+          alt="Raie Manta"
+        />
+        <h3>Raie Manta</h3>
+        <p>
+          Poisson cartilagineux géant pouvant atteindre jusqu'à 7 mètres
+          d'envergure vivant principalement dans les eaux tropicales et se
+          nourrisant de plancton.
+        </p>
+      </article>
+      <h2 id="500m">--500 mètres</h2>
+
+      <div class="animal Requin_mako">
+        <img
+          src="assets/images/Animaux/Requin_mako.png"
+          alt="Requin mako"
+        />
+        <h3>Requin mako</h3>
+      </div>
+
+      <article class="animal Poisson_lune">
+        <img
+          src="assets/images/Animaux/poisson_lune.png"
+          alt="Poisson lune"
+        />
+        <h3>Poisson lune</h3>
+        <p>
+          Poisson osseux le plus lourd au monde, pouvant peser plus de 2 tonnes,
+          qu'on reconnait à son corps aplati. Il se nourrit principalement de
+          méduses et vit dans les eaux tempérées et tropicales.
+        </p>
+      </article>
+
+      <article class="animal Cœlacanthe">
+        <img
+          src="assets/images/Animaux/Coelacanthe.png"
+        />
+        <h3>Cœlacanthe</h3>
+        <p>
+          Poisson préhistorique existant depuis plus de 400 millions d'années.
+          Longtemps cru éteint, il a été redécouvert en 1938 et vit dans les
+          profondeurs des océans près de l'Afrique et de l'Indonésie.
+        </p>
+      </article>
+
+      <div class="animal Espadon">
+        <img
+          src="assets/images/Animaux/Espadon.png"
+          alt="Espadon"
+        />
+        <h3>Espadon</h3>
+      </div>
+      <article class="animal Pieuvre_géante">
+        <img
+          src="assets/images/Animaux/Pieuvre_géante_pacifique.png"
+          alt="Pieuvre géante du Pacifique"
+        />
+        <h3>Pieuvre géante du Pacifique</h3>
+        <p>
+          Plus grande espèce de pieuvre, pouvant peser jusqu'à 50 kg et mesurer 6 mètres de long. Elle habite les eaux froides du
+          Pacifique Nord et se nourrit principalement de crustacés.
+        </p>
+      </article>
+
+      <h2 id="1000m">--1000 mètres</h2>
+
+      <div class="animal Requin_blanc">
+        <img
+          src="assets/images/Animaux/requin_blanc.png" alt="Grand requin blanc"
+        />
+        <h3>Grand requin blanc</h3>
+      </div>
+
+      <article class="animal Tortue_luth">
+        <img
+          src="assets/images/Animaux/Tortue_luth.png"
+          alt="Tortue luth"
+        />
+        <h3>Tortue luth</h3>
+        <p>
+          Plus grande espèce de tortue marine,pouvant mesurer 2,5 mètres de
+          longueur et peser jusqu’à 700 kg. Elle vit principalement dans les
+          océans tropicaux et subtropicaux, se nourrissant surtout  de
+          méduses.
+        </p>
+      </article>
+
+      <article class="animal Requin_baleine">
+        <img
+          src="assets/images/Animaux/requin_baleine.png"
+          alt="Requin baleine"
+
+        />
+        <h3>Requin baleine</h3>
+        <p>
+          Plus grand poisson du monde, pouvant atteindre 12 mètres de long, il
+          se nourrit principalement de plancton, de krill et de petits poissons
+          en filtrant l'eau.
+        </p>
+      </article>
+
+      <div class="animal Dragon_abyssal">
+        <img
+          src="assets/images/Animaux/Dragon_abyssal.png"
+          alt="Dragon abyssal"
+        />
+        <h3>Dragon abyssal</h3>
+      </div>
+
+      <div class="animal Cachalot">
+        <img
+          src="assets/images/Animaux/Cachalot.png"
+          alt="Cachalot"
+        />
+        <h3>Cachalot</h3>
+      </div>
+
+      <h2 id="2000m">--2000 mètres</h2>
+
+      <article class="animal Baudroie_abyssale">
+        <img
+          src="assets/images/Animaux/Baudroie_abyssale.png"
+          alt="Baudroie abyssale"
+        />
+        <h3>Baudroie abyssale</h3>
+        <p>
+          Poisson vivant dans les profondeurs marines reconnu pour sa méthode de
+          chasse unique, utilisant une "canne à pêche" bioluminescente sur sa
+          tête pour attirer ses proies dans l'obscurité.
+        </p>
+      </article>
+
+      <article class="animal Requin_Groenland">
+        <img
+          src="assets/images/Animaux/requin_du_Groenland.png"
+          alt="Requin du Groenland"
+        />
+        <h3>Requin du Groenland</h3>
+        <p>
+          Espèce de requin reconnue pour pouvoir vivre jusqu'à 400 ans et vivant
+          dans les eaux froides de l'Arctique et de l'Atlantique Nord.
+        </p>
+      </article>
+
+      <div class="animal Calmar_géant">
+        <img
+          src="assets/images/Animaux/Calmar_géant.png"
+          alt="Calmar géant"
+        />
+        <h3>Calmar géant</h3>
+      </div>
+
+      <article class="animal Grandgousier">
+        <img
+          src="assets/images/Animaux/Grandgousier.png"
+          alt="Grandgousier"
+        />
+        <h3>Grandgousier</h3>
+        <p>
+          Poisson d'eau douce que l'on trouve principalement en eaux profondes
+          de l'Atlantique. Il est reconnu pour sa bouche imposante qui lui
+          permet de capturer des proies assez grandes.
+        </p>
+      </article>
+
+      <h2 id="3000m">--3000 mètres</h2>
+
+      <div class="animal Poisson-lézard">
+        <img
+          src="assets/images/Animaux/Poisson-lézard.png"
+          alt="Poisson-lézard de profondeur"
+        />
+        <h3>Poisson-lézard de profondeur</h3>
+      </div>
+
+      <article class="animal Pieuvre_Dumbo">
+        <img
+          src="assets/images/Animaux/Pieuvre_Dumbo.png"
+          alt="Pieuvre Dumbo"
+        />
+        <h3>Pieuvre Dumbo</h3>
+        <p>
+          Pieuvre nommée d'après le célèbre éléphant en raison de ses nageoires
+          ressemblant aux fameuses oreilles, elle vit dans les profondeurs du
+          Pacifique.
+        </p>
+      </article>
+      <h2 id="4000m">--4000 mètres</h2>
+      <div class="animal Poisson-ogre">
+        <img
+          src="assets/images/Animaux/Poisson-ogre.png"
+          alt="Poisson-ogre"
+        />
+        <h3>Poisson-ogre</h3>
+      </div>
+      <h2 id="5000m">--5000 mètres</h2>
+      <div class="animal Poisson_visage">
+        <img
+          src="assets/images/Animaux/Poisson_sans_visage.png"
+          alt="Poisson sans visage"
+        />
+        <h3>Poisson sans visage</h3>
+        <p></p>
+      </div>
+      <div class="docu">
+        <h3>Les mystères des créatures des profondeurs océaniques</h3>
+        <a href="https://www.youtube.com/watch?v=1OOduTuv784">
+          Source: https://www.youtube.com/watch?v=1OOduTuv784
+        </a>
+        <video
+          src="assets/video/youtube_1OOduTuv784_1920x1080_h264.mp4"
+          controls
+          poster="assets/images/Miniature.jpg"
+        ></video>
+      </div>
+    </main>
+
+    <footer>
+      <a href="#" class="button">&uarr;</a>
+      <section class="footer-infos">
+        <h2>TP2 Par Olivier Beauregard en 582-1W1 - Mise page web en Techniques d'intégration multimédia, Collège Maisonneuve, automne 2024</h2>
+        <h3>(Adresse github)</h3>
+        
+        <h2>Informations sur le Collège Maisonneuve</h2>
+        <ul class="adresse">
+          <li>3800 Sherbrooke Est</li>
+          <li>Montréal, QC</li>
+          <li>H1X 2A2</li>
+        </ul>
+      </section>
+      <h2>Médias sociaux</h2>
+      <section class="footer-sociaux">
+        <a href="#">
+          <img src="assets/images/Médias/Instagram_logo.png" alt="Instagram" />
+        </a>
+        <a href="#">
+          <img src="assets/images/Médias/facebook_logo.png" alt="facebook" />
+        </a>
+        <a href="#">
+          <img src="assets/images/Médias/YouTube_logo.png" alt="YouTube" />
+        </a>
+      </section>
+      <h4> Avis de confidentialité | ©Copyright 2024 Olivier Beauregard</h4>
+    </footer>
+  </body>
 </html>

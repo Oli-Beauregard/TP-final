@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/formulaire.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/Vagues/logo.png" />
+    <title>Faire un don</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h1>La Faune sous-marine</h1>
+        <ul>
+          <li>
+            <a href="index.html" target="_blank">Les profondeurs</a>
+          <li>
+            <a href="tableau.html" target="_blank">Les animaux marins au Québec</a>
+          </li>
+          <li>
+            <a href="formulaire.html" target="_blank">Faire un don</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2>
+      Faire un don au GREMM (Groupe de recherche et d’éducation sur les
+      mammifères marins)
+    </h2>
+    <form action="URL" method="POST">
+      <section class="info-perso">
+        <h2>Information personnelle</h2>
+
+        <div class="input-group">
+          <label for="nom">Nom</label>
+          <input type="text" name="nom" id="nom" required maxlength="200" />
+        </div>
+
+        <div class="input-group">
+          <label for="prenom">Prénom</label>
+          <input
+            type="text"
+            name="prenom"
+            id="prenom"
+            required
+            maxlength="200"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="courriel">Courriel</label>
+          <input
+            type="email"
+            name="courriel"
+            id="courriel"
+            required
+            maxlength="200"
+            placeholder="ex: adresse@example.com"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="courriel">Adresse</label>
+          <input
+            type="text"
+            name="adresse"
+            id="adresse"
+            required
+            maxlength="200"
+            placeholder=""
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="téléphone">Numéro de téléphone</label>
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            required
+            maxlength="12"
+            placeholder="000 000-0000"
+          />
+        </div>
+
+        <div class="input-group">
+          <p>Choisissez le montant du don</p>
+          <label for="5$">5$</label>
+          <input type="radio" name="montant" id="5$" value="5$" checked />
+          <label for="10$">10$</label>
+          <input type="radio" name="montant" id="10$" value="10$" />
+          <label for="25$">25$</label>
+          <input type="radio" name="montant" id="25$" value="25$" />
+          <label for="50$">50$</label>
+          <input type="radio" name="montant" id="50$" value="50$" />
+          <label for="100$">100$</label>
+          <input type="radio" name="montant" id="100$" value="100$" />
+          <label>
+            <span>Autre montant:</span>
+            <input type="text" name="montant-autre" id="autre-montant" />
+          </label>
+          <input type="radio" name="montant" value="autre" />
+        </div>
+      </section>
+
+      <section class="informations optionnelles">
+        <h2>Information optionnelle</h2>
+        <div class="input-group">
+          <label for="commentaires">Autres informations pertinentes</label>
+          <textarea
+            name="commentaires"
+            id="commentaires"
+            maxlength="2000"
+            rows="10"
+            cols="100"
+          ></textarea>
+        </div>
+      </section>
+      <div class="btn-group">
+        <input type="reset" />
+        <input type="submit" value="Soumettre" />
+      </div>
+    </form>
+  </body>
+</html>

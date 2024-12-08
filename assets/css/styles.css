@@ -1,6 +1,393 @@
 @import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+/* Animation */
+@keyframes couleurAnim {
+  0% {
+    color: white;
+    transform: scale(1);
+  }
+  100% {
+    color: rgb(0, 68, 255);
+    transform: scale(1);
+  }
+}
+
+@keyframes VagueAnim {
+  0% {
+    transform: translateX(-1.25%);
+  }
+
+  100% {
+    transform: translateX(1.25%);
+  }
+}
+
+/* Styles principaux */
+
+* {
+  font-family: Outfit;
+  color: white !important;
+  text-decoration: none;
+}
+
+html,
+body {
+  background: linear-gradient(
+    rgb(79, 175, 231) 0%,
+    rgb(79, 175, 231) 7%,
+    rgb(40, 84, 199) 7%,
+    rgb(14, 57, 151) 15%,
+    rgb(10, 35, 88) 25%,
+    rgb(6, 22, 54) 35%,
+    rgb(0, 0, 0) 50%,
+    rgb(0, 0, 0) 100%
+  );
+  font-family: Outfit;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
 
 h1 {
-    border: 12px;
+  font-size: 2rem;
+  padding: 1.25rem 0 0 2rem;
+  animation: couleurAnim 2sec alternate infinite;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding: 2rem 0 2rem 1rem !important;
+  padding-left: 0;
+}
+h3 {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  width: auto;
+}
+h4 {
+  padding: 0.5rem;
+  width: auto;
+}
+
+
+a {
+  font-size: 1.3rem;
+  padding: 0.75rem;
+}
+
+a:hover {
+  color: rgb(186, 241, 255);
+  cursor: pointer;
+}
+
+img {
+  width: 10%;
+}
+video {
+  max-width: 100%;
+}
+
+/* Entête */
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+nav ul li {
+  display: flex;
+  padding: 1rem;
+}
+
+nav ul li a {
+  margin: 0.2rem 1rem 0.2rem 1rem;
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+nav ul li .sous-menu {
+  display: none;
+  position: absolute;
+  border: solid #58c0da;
+  border-radius: 10px;
+  background-color: #0a91b3;
+  gap: 0;
+  z-index: 1;
+  transform: translateY(2rem) translateX(-1rem);
+}
+
+nav ul li:hover .sous-menu {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+/* Contenu principal */
+.ciel {
+  height: 20rem;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+.vagues {
+  position: absolute;
+  left: -25px;
+  right: -25px;
+  width: 290vh;
+}
+
+.vague1 {
+  animation: VagueAnim 6s infinite alternate ease-in-out;
+}
+.vague2 {
+  animation: VagueAnim 6s infinite alternate-reverse ease-in-out;
+}
+
+.animal {
+  padding: 2rem 0 5rem 0;
+  width: fit-content;
+  box-sizing: content-box;
+}
+
+.docu {
+  padding: 10rem;
+}
+
+footer {
+  background-color: rgb(18, 46, 138);
+  display: flex;
+  flex-direction: column;
+}
+
+footer h4 {
+  text-align: center;
+}
+
+
+
+.adresse li {
+  padding: 0.5rem;
+}
+
+.footer-sociaux {
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  margin-top: 1rem;
+  width: 0.8rem;
+  padding: 20px 25px;
+  border: none;
+  border-radius: 100px;
+  background-color: #36507c;
+  text-decoration: none;
+  color: black;
+  align-self: center;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+.button:hover {
+  color: white;
+  background-color: #5895da;
+  transition: all 1s ease-in-out;
+}
+
+/* Animaux */
+
+.Lamantin {
+  transform: translateX(50rem) translateY(12rem);
+}
+
+.Lamantin img {
+  width: 7rem;
+}
+
+.Morue {
+  transform: translateX(22rem) translateY(8rem);
+}
+.Morue img {
+  width: 3.5rem;
+}
+
+.Beluga {
+  transform: translateX(2rem);
+}
+
+.Beluga img {
+  width: 9rem;
+}
+
+.Orque {
+  transform: translateX(30rem) translateY(-3rem);
+}
+
+.Orque img {
+  width: 11rem;
+}
+
+.Requin_bleu {
+  transform: translateX(70rem) translateY(-10rem);
+}
+
+.Requin_bleu img {
+  width: 8rem;
+}
+
+.Raie_Manta {
+  transform: translateX(8rem) translateY(-6rem);
+}
+
+.Raie_Manta img {
+  width: 11rem;
+  padding:5rem 0 ;
+}
+
+.Requin_mako {
+  transform: translateX(57rem) translateY(3rem);
+}
+
+.Requin_mako img {
+  width: 8rem;
+}
+
+.Poisson_lune {
+  transform: translateX(14rem) translateY(7rem);
+  padding:5rem 0 ;
+}
+
+.Poisson_lune img {
+  width: 6rem;
+}
+
+.Cœlacanthe {
+  transform: translateX(3rem) translateY(7rem);
+  padding:5rem 0 ;
+}
+
+.Cœlacanthe img {
+  width: 6rem;
+}
+
+.Espadon {
+  transform: translateX(75rem) translateY(4rem);
+}
+
+.Espadon img {
+  width: 9rem;
+}
+
+.Pieuvre_géante {
+  transform: translateX(20rem);
+}
+
+.Pieuvre_géante img {
+  width: 8rem;
+}
+
+.Requin_blanc {
+  transform: translateX(45rem);
+}
+
+.Requin_blanc img {
+  width: 9rem;
+}
+
+.Tortue_luth {
+  transform: translateX(9rem);
+}
+
+.Tortue_luth img {
+  width: 10rem;
+}
+
+.Requin_baleine {
+  transform: translateX(25rem);
+}
+
+.Requin_baleine img {
+  width: 20rem;
+}
+
+.Dragon_abyssal {
+  transform: translateX(50rem) translateY(9rem);
+}
+
+.Dragon_abyssal img {
+  width: 4rem;
+}
+
+.Cachalot {
+  transform: translateX(70rem);
+}
+
+.Cachalot img {
+  width: 24rem;
+}
+
+.Baudroie_abyssale {
+  transform: translateX(12rem) translateY(5rem);
+}
+
+.Baudroie_abyssale img {
+  width: 3.5rem;
+}
+
+.Requin_Groenland {
+  transform: translateX(30rem) translateY(13rem);
+}
+
+.Requin_Groenland img {
+  width: 11rem;
+}
+
+.Calmar_géant {
+  transform: translateX(8rem);
+}
+
+.Calmar_géant img {
+  width: 6rem;
+}
+
+.Grandgousier {
+  transform: translateX(19rem) translateY(4rem);
+}
+
+.Grandgousier img {
+  width: 4rem;
+}
+
+
+.Poisson-lézard {
+  transform: translateX(64rem)translateY(10rem);
+}
+
+.Poisson-lézard img {
+  width: 7rem;
+}
+
+.Pieuvre_Dumbo {
+  transform: translateX(17rem) translateY(7rem);
+}
+
+.Pieuvre_Dumbo img {
+  width: 6rem;
+}
+
+.Poisson-ogre {
+  transform: translateX(80rem) translateY(6rem);
+}
+
+.Poisson-ogre img {
+  width: 2rem;
+}
+
+.Poisson_visage {
+  transform: translateX() translateY(18rem);
+}
+
+.Poisson_visage img {
+  width: 5rem;
 }
